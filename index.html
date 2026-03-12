@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>E-food</title>
+</head>
+<body>
+
+    <div class="container">
+    <header>
+       <i class="fa-brands fa-web-awesome"></i>
+        <nav>
+            <ol>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#footer">Contato</a></li>
+            </ol>
+        </nav>
+        <a href="#sobre" id="logar"><i class="fa-regular fa-circle-user"></i><div class="a-header">Entrar</div></a>
+    </header>
+    <main>
+        <section class="sessao" id="home">
+            <div class="conteudo_home">
+                <div class="sim">
+                <div id="assunto">
+                    <h1>E-food</h1>
+                    <p> O melhor <span class="burguer">hamburguer</span> já feito</p>
+
+                </div>
+                <div class="carrosel">
+                    <div class="imagens">
+                        <div class="imagem"><img src="./assets/burguer1.jpg" alt=""></div>
+                        <div class="imagem"><img src="./assets/burguer1.jpg" alt=""></div>
+                        <div class="imagem"><img src="./assets/burguer1.jpg" alt=""></div>
+    
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </section>
+        <section class="sessao" id="produtos" >
+            <h2>Produtos</h2>
+            <div class="itens" id="itens">
+                <div class="item">
+                    <img src="./assets/burguer1.jpg" alt="">
+                    <div class="card-texto">
+                        <h2>Hamburgue</h2>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./assets/burguer1.jpg" alt="">
+                    <div class="card-texto">
+                        <h2>Hamburgue</h2>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./assets/burguer1.jpg" alt="">
+                    <div class="card-texto">
+                        <h2>Hamburgue</h2>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./assets/burguer1.jpg" alt="">
+                    <div class="card-texto">
+                        <h2>Hamburgue</h2>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="sessao" id="sobre">
+
+            <h2>Sobre</h2>
+            <h4>Esta é uma empresa ficticia para um projeto</h4>
+            <p>Nossa empresa nasceu com um propósito simples: oferecer experiências únicas que vão além de um simples produto ou serviço. Desde o início, acreditamos que qualidade, inovação e proximidade com as pessoas são os pilares que constroem uma marca forte e duradoura.</p>
+            <p>Nossa trajetória é marcada por evolução constante. Investimos em tecnologia, capacitação e novas ideias para acompanhar as mudanças do mundo e as necessidades das pessoas. Acreditamos que inovar não significa apenas criar algo novo, mas também melhorar continuamente aquilo que já fazemos bem.</p>
+        </section>
+    </main>
+    <footer id="footer" class="contato">
+        <h2>E-food</h2>
+        <div class="info">
+        <div class="contatate">
+        <h2>Contate nos:</h2>
+        <ul>
+            <li class="contato"><a href="#" id="telefone"><i class="fa-solid fa-phone"></i>+55 14 99999-9999</a></li>
+            <li class="contato"><a href="#" id="email"><i class="fa-solid fa-envelope"></i>efood@gmail.com</a></li>
+        </ul>
+        </div>
+        <div class="redes_sociais">
+        <h2>Nossa redes sociais:</h2>
+        <ul>
+
+        <li class="redes"><a href="#"><i class="fa-brands fa-instagram"></i>E-food</a></li>
+        <li class="redes"><a href="#"><i class="fa-brands fa-facebook"></i>E-food</a></li>
+        <li class="redes"><a href="#"><i class="fa-brands fa-x-twitter"></i>E-food</a></li>
+
+        </ul>
+        </div>
+        </div>
+        <h6>©2025 E-food. All rights reserved</h6>
+    </footer>
+    </div>
+
+    <script src="./js/produtos.js"></script>
+<!--
+<button onclick="pegarMensagem()">Pegar Mensagem</button>
+<div id="resultado"></div>
+
+
+<script>
+async function pegarMensagem() {
+    // Faz a requisição para o PHP
+    let resposta = await fetch("teste.php");
+    
+    // Converte o resultado para JSON
+    let dados = await resposta.json();
+    
+    // Mostra a mensagem no console e no HTML
+    alert(dados.mensagem);
+    document.getElementById("resultado").innerText = dados.mensagem;
+}
+    -->
+</script>
+    <script>
+        document.getElementById("telefone").onclick = function (){
+            navigator.clipboard.writeText(this.innerText);
+        }
+        document.getElementById("email").onclick = function (){
+            navigator.clipboard.writeText(this.innerText);
+        }
+        // -----------------------------------------------
+        
+    </script>
+</body>
+</html>

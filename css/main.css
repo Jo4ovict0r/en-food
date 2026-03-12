@@ -1,0 +1,135 @@
+main{
+    width: 100%;
+}
+section{
+    padding: 20px;
+}
+#home{
+    background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+}
+
+#assunto{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-size: 4rem;
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+#assunto h1{
+    display: flex;
+    font-size: 7rem;
+    
+
+}
+.sim{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #95471371;
+}
+.burguer{
+    color:red;
+}
+.sim{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+@keyframes girar {
+    0%{
+        transform: translateX(0%);
+    }
+    30%{
+        transform: translateX(0%);
+    }
+    33%{
+        transform: translateX(-100%);
+    }
+    63%{
+        transform: translateX(-100%);
+    }
+    66%{
+        transform: translateX(-200%);
+    }
+    96%{
+        transform: translateX(-200%);
+    }
+    99%{
+        transform: translateX(0);
+    }
+}
+.carrosel{
+    min-width: 200px;
+    width: 400px;
+
+    border-radius: 100px;
+    box-shadow: -2px -1px 181px 15px rgba(0,0,0,1) inset;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    
+
+}
+.imagens{
+    height: 100%;
+    width: 100%;
+    transition: animation 0.5s ease;
+    animation: girar 60s infinite;
+    display: flex;
+    
+}
+.imagem{
+    flex: 0 0 100%;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.itens{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+
+}
+.item{
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.4);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    transition: all 0.1s ease;
+    width: 200px;
+    padding: 10px;
+    
+    
+}
+
+.card-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+@media (max-width: 1300px){
+    .carrosel{
+        display: none;
+    }
+}
+
+#produtos, #sobre{
+    padding: 5%;
+
+}
