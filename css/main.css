@@ -3,6 +3,9 @@ main{
 }
 section{
     padding: 20px;
+    h2{
+        margin: 20px;
+    }
 }
 #home{
     background-color: var(--cor-primaria);
@@ -123,7 +126,7 @@ section{
     cursor: pointer;
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1400px){
     .carrosel{
         display: none;
     }
@@ -132,4 +135,13 @@ section{
 #produtos, #sobre{
     padding: 5%;
 
+}
+.conteudo-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-paragrafo{
+    text-indent: 1em;
 }

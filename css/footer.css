@@ -9,6 +9,7 @@ footer{
     align-items: center;
     font-weight: 100;
     font-size: 150%;
+    gap: 20px;
     *{
         color: var(--cor-primaria);
         background-color: var(--cor-secundaria);
